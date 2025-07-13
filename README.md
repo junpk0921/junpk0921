@@ -48,12 +48,23 @@
   - WebSocket 기반 실시간 알림
   - AI 요약 일기 자동화
 
+[💻 프론트엔드 상세 보기](https://github.com/petfeel/petfeel-frontend)
+
+[⚙️ 백엔드 상세 보기](https://github.com/petfeel/petfeel-backend)
+
 ---
 
 ### 🤖 위치 센서를 이용한 로봇팔 원격 제어
 - **개요**: 손 움직임을 정밀하게 인식하여 로봇팔을 실시간으로 직관적으로 제어.
 - **역할**: ESP32–Raspberry Pi 통신, 압력 센서 및 서보 모터 제어, 전체 제어 로직 개발.
 - **주요 기술**: MPU-9250, PCA9685, ServoKit, Bluetooth 통신, Fusion 360.
+- **기능**:
+  - IMU 센서 기반 위치 추정
+  - 압력 센서 기반 그리퍼 제어
+  - 서보 모터 다채널 제어
+  - 실시간 Bluetooth 통신 및 데이터 처리
+
+[💻 프론트엔드 상세 보기](https://github.com/FolloArmMe/Real-time-Remote-Robotic-Arm-Control-Using-Sensor-Data)
 
 ---
 
@@ -61,6 +72,12 @@
 - **개요**: 적외선 카메라 기반 손동작 인식으로 전등 제어 및 실시간 전력 요금 계산 및 문자 알림.
 - **역할**: 손동작 제어, 전력 사용량 계산, 문자 전송 및 Bluetooth 연동 앱 개발.
 - **주요 기술**: OpenCV, MediaPipe, Arduino, App Inventor, Bluetooth 통신, 문자 전송 API.
+- **기능**:
+  - 카메라 기반 손동작 인식
+  - 전등 On/Off 릴레이 제어
+  - 전력 사용량 및 전기요금 계산
+  - 문자 전송 기능
+  - Bluetooth 연동 앱 제어
 
 ---
 
