@@ -63,7 +63,9 @@
   - 압력 센서 기반 그리퍼 제어
   - 서보 모터 다채널 제어
   - 실시간 Bluetooth 통신 및 데이터 처리
-    
+  
+[💻 프론트엔드 상세 보기](https://github.com/FolloArmMe/Real-time-Remote-Robotic-Arm-Control-Using-Sensor-Data)
+
 ---
 
 ### 💡 모션 인식 스마트 라이트
