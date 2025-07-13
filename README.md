@@ -8,7 +8,7 @@
 ## 📫 Contact
 - 📞 010-3604-6697
 - 📧 dkel6584@naver.com
-- 📄 [Notion Portfolio](https://www.notion.so/8afaed8be42b46f7b97debfa7187c54e)
+- 📄 [Notion](https://www.notion.so/8afaed8be42b46f7b97debfa7187c54e)
 
 ---
 
