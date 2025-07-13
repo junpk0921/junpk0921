@@ -48,9 +48,9 @@
   - WebSocket 기반 실시간 알림
   - AI 요약 일기 자동화
 
-[💻 프론트엔드 코드 보기](https://github.com/petfeel/petfeel-frontend)
+[💻 프론트엔드 상세 보기](https://github.com/petfeel/petfeel-frontend)
 
-[⚙️ 백엔드 코드 보기](https://github.com/petfeel/petfeel-backend)
+[⚙️ 백엔드 상세 보기](https://github.com/petfeel/petfeel-backend)
 
 ---
 
