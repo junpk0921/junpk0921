@@ -1,155 +1,87 @@
-# Team FollowArmMe - Sensor-Based Real-Time Remote Robotic Arm Control
+# 👋 안녕하세요! 스마트 혁신과 신뢰성을 구현하는 엔지니어, 박준호입니다.
 
-# 위치 센서를 이용한 로봇 팔 실시간 원격 제어
-“사람 손의 정밀한 움직임을 로봇 팔로 재현하여 원격 제어를 실현하다.”
-
----
-
-## 🎯 목표와 개요
-
-### 프로젝트 목표
-- 위치 센서(MPU9250)와 압력 센서를 기반으로 손의 움직임과 그리퍼 제어를 실시간으로 로봇 팔에 반영
-- 의료, 재활, 산업 자동화 등 다양한 분야에 응용 가능한 직관적인 원격 로봇 제어 기술 구현
-
-### 개요
-- IMU 센서를 활용한 손의 roll, pitch, yaw 측정 및 보정
-- 압력 센서를 이용한 그리퍼(집게) 정밀 제어
-- PCA9685를 통한 다채널 서보 모터 제어
-- ESP32 ↔ Raspberry Pi 간 Bluetooth 실시간 통신
+저는 문제를 분석하고 해결책을 제시하며, 데이터 기반 협업으로 함께 성장하는 엔지니어입니다.  
+다양한 기술을 융합해 현장 적용 가치를 창출하고, 머신비전과 ICT를 통해 신뢰성과 정확성을 강화하며 성장하고 있습니다.
 
 ---
 
-## 🛠 시스템 구성
-
-### 하드웨어
-- **MPU-9250**: 9축 IMU 센서 (가속도, 자이로, 자기계)
-- **압력 센서**: 손가락 굽힘 정도 측정
-- **서보 모터 (MG996R)**: 로봇 팔 관절 및 그리퍼 제어
-- **PCA9685**: 16채널 PWM 드라이버로 다채널 모터 제어
-- **ESP32**, **Raspberry Pi**, **MeanWell LRS-75-5 파워 서플라이**
-
-### 소프트웨어
-- ESP32: IMU 및 압력 센서 데이터 수집, EMA 필터 적용, Bluetooth 전송
-- Raspberry Pi: 수신 데이터 기반 실시간 서보 모터 제어 (ServoKit, Python)
-- Fusion 360: 로봇 팔 모델링 및 3D 출력 설계
-- CircuitPython ServoKit 라이브러리
-
-<p align="center">
-  <img src="./images/circuit_setup_real.png">
-  <br>
-  <em>실제 회로 및 서보 모터 전체 구성 모습</em>
-</p>
-
-<p align="center">
-  <img src="./images/circuit_diagram.png">
-  <br>
-  <em>회로 다이어그램 및 전원/모터 연결 흐름</em>
-</p>
+## 📫 Contact
+- 📞 010-3604-6697
+- 📧 dkel6584@naver.com
+- 📄 [Notion](https://www.notion.so/8afaed8be42b46f7b97debfa7187c54e)
 
 ---
 
-## ⚙️ 기능 및 흐름
-
-### 핵심 기능
-- IMU 기반 손 움직임 각도 추정 (roll, pitch, yaw) 및 실시간 반영
-- 압력 센서 기반 그리퍼 강도 및 각도 제어
-- Bluetooth 무선 통신을 통한 실시간 제어
-- 부드러운 모션 구현 (step 함수 + 시간 지연)
-- 안전성 강화를 위한 각도 제한 및 필터링
-
-### 동작 흐름
-1. ESP32가 센서 데이터를 실시간으로 수집
-2. EMA(이중 지수이동평균) 및 Complementary Filter 적용으로 값 안정화
-3. Bluetooth로 Raspberry Pi에 전송
-4. Raspberry Pi가 PCA9685와 연동해 다채널 서보 모터 제어
-5. 그리퍼 포함 로봇 팔 실시간 제어
-
-<p align="center">
-  <img src="./images/cad_model.png">
-  <br>
-  <em>Fusion 360 기반 로봇 팔 전체 CAD 모델</em>
-</p>
+## 💻 Skills
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=Python&logoColor=white)
+![C/C++](https://img.shields.io/badge/C/C++-00599C?style=flat&logo=C%2B%2B&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=OpenCV&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat&logo=Flutter&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=FastAPI&logoColor=white)
+![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-C51A4A?style=flat&logo=Raspberry-Pi&logoColor=white)
+![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat&logo=Arduino&logoColor=white)
 
 ---
 
-## 🗂 프로젝트 구조
-robot-arm-project/
-├── software/
-│   ├── glove/        # IMU 및 압력 센서 장갑 코드
-│   └── controller/   # Raspberry Pi 기반 모터 제어 코드
-├── hardware/
-│   ├── cad-model/    # Fusion 360 3D 모델 및 출력 설계 파일
-│   └── 회로 및 배선 자료
-├── docs/            # 보고서 및 발표 자료
-└── README.md
+## 🏆 Certificates & Awards
+- 컴퓨터활용능력 1급
+- 운전면허 1종보통
+- Lab4DX 고객 경험 데이터 처리 서비스 프로젝트 우수상 (2025)
 
 ---
 
-## 👥 팀명 및 역할
-- **팀명**: 팔로미
-- **팀원**
-  - 신통화: Bluetooth 통신 모듈, 압력 센서 제어
-  - 박준호: ESP32–Raspberry Pi 통신, 압력 센서 및 서보 모터 제어, 전체 제어 로직 개발
-  - 최찬희: 서보 모터 연동, 로봇 집게 테스트 및 통합
-  - 이행승: Fusion 360 설계, 3D 출력, 최종 조립
+## 🎓 Education
+- 조선대학교 전자공학부 졸업 (2025)
+- LG전자 DX School 데이터 기반 문제 해결 및 서비스 기획·개발 과정 수료 (2024.12.17 ~ 2025.06.18)
 
 ---
 
-## 🛠 제작 과정 및 문제 해결
+## 💡 Projects
 
-### 하드웨어 문제 해결
-- 출력 중 스파게티 오류 → 프린터 베드 온도 상승 및 환경 개선
-- 초기 그리퍼 설계 불안정 → 삼각형 끝 → 직사각형, 고무 팁 추가 등 구조 개선
-- 모터 초기 각도 문제 → 각 채널별 초기값 보정
-
-### 소프트웨어 문제 해결
-- IMU 데이터 필터링 → Complementary Filter + EMA 적용
-- Bluetooth 송수신 불안정 → 통신 주기 최적화 (100ms), 예외 처리 강화
-- 압력 센서값 반전 및 범위 제한 → 0~1700으로 제한, 각도 매핑 정밀화
-
----
-
-## 🎥 최종 결과 및 시연
-
-- 직관적인 손 움직임과 그리퍼 동작의 실시간 반영
-- 무선 제어 환경에서 로봇 팔이 물체를 집고 놓는 등 실제 작업 시연
-- 위험하거나 사람이 들어가기 어려운 장소에서 응용 가능한 가능성 입증
-
-<p align="center">
-  <img src="./images/glove_demo_1.png">
-  <br>
-  <em>장갑 착용 및 그리퍼 제어 첫 시연 모습</em>
-</p>
-
-<p align="center">
-  <img src="./images/glove_demo_2.png">
-  <br>
-  <em>장갑 및 그리퍼 제어 추가 시연 (각도 테스트)</em>
-</p>
-
-<p align="center">
-  <img src="./images/final_demo.jpg">
-  <br>
-  <em>최종 데모: 물체를 집는 로봇 팔 동작</em>
-</p>
+### 🐶 반려동물 이상행동 감지 기반 스마트 케어 시스템
+- **개요**: 외출 중 반려동물의 이상행동(강박 움직임, 무반응 등)을 실시간으로 감지하고 즉각 대응 가능한 AI 스마트 케어 시스템 개발.
+- **역할**: Flutter 앱 개발, 실시간 알림 기능, AI 요약 일기 자동화.
+- **주요 기술**: YOLOv7-Pose, IsolationForest, WebSocket, FastAPI, Flutter, Gemini API.
+- **기능**:
+  - 행동 분석 및 포즈 벡터 시각화
+  - WebSocket 기반 실시간 알림
+  - AI 요약 일기 자동화
 
 ---
 
-## 💎 Key Value
-- **Precision Control**: IMU 기반 미세한 손 움직임 반영
-- **Intuitive Operation**: 누구나 직관적으로 제어할 수 있는 사용자 경험
-- **Real-time Safety**: 실시간 반응 및 각도 제한으로 안전성 강화
-- **Scalability**: 의료, 재활, 산업 등 다양한 분야 확장 가능
+### 🤖 위치 센서를 이용한 로봇팔 원격 제어
+- **개요**: 손 움직임을 정밀하게 인식하여 로봇팔을 실시간으로 직관적으로 제어.
+- **역할**: ESP32–Raspberry Pi 통신, 압력 센서 및 서보 모터 제어, 전체 제어 로직 개발.
+- **주요 기술**: MPU-9250, PCA9685, ServoKit, Bluetooth 통신, Fusion 360.
 
 ---
 
-## 📄 추가 자료
-[🔗 발표 자료 보기](https://your-presentation-link)
-
-[💻 코드 및 CAD 파일 보기](https://your-repo-link)
+### 💡 모션 인식 스마트 라이트
+- **개요**: 적외선 카메라 기반 손동작 인식으로 전등 제어 및 실시간 전력 요금 계산 및 문자 알림.
+- **역할**: 손동작 제어, 전력 사용량 계산, 문자 전송 및 Bluetooth 연동 앱 개발.
+- **주요 기술**: OpenCV, MediaPipe, Arduino, App Inventor, Bluetooth 통신, 문자 전송 API.
 
 ---
 
-> **"정밀한 센서 기반 제어로 사람과 로봇의 경계를 허물다."**
+## ⚙️ Troubleshooting & Problem Solving
+- WebSocket 알림 누락 이슈 → 중복 수신 체크 및 Flutter UI 최적화로 해결
+- 실시간 Bluetooth 통신 불안정 → HardwareSerial 전환, 타이밍 및 버퍼 최적화
+- 전등 작동 시간 측정 오류 → debounce 알고리즘 및 오차 필터링 적용
+
+---
+
+## 🚀 앞으로의 목표
+임베디드 기술과 데이터 분석 역량을 기반으로 스마트 시티, 관제 시스템 등 미래 솔루션 개발에 기여하고, 글로벌 경쟁력을 갖춘 실전형 엔지니어로 성장하겠습니다.
+
+---
+
+### 📊 GitHub Stats
+![junpk0921's GitHub stats](https://github-readme-stats.vercel.app/api?username=junpk0921&show_icons=true&theme=radical)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=junpk0921&layout=compact&theme=radical)
+
+---
+
+> **"문제를 즐기며 성장하고, 기술로 사람과 산업에 기여하는 엔지니어"**
 
 ---
