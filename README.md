@@ -48,6 +48,8 @@
   - WebSocket 기반 실시간 알림
   - AI 요약 일기 자동화
 
+[🔗 프로젝트 자세히 보기](https://www.notion.so/your_project_link)
+
 ---
 
 ### 🤖 위치 센서를 이용한 로봇팔 원격 제어
